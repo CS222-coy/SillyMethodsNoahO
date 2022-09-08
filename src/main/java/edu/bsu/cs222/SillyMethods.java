@@ -16,4 +16,11 @@ public class SillyMethods {
         }
         return numberCount;
     }
+
+    public boolean checkIfEven(int numberToCheck) {
+        if(numberToCheck % 2 == 0) {
+            return true;
+        }
+        return false;
+    }
 }

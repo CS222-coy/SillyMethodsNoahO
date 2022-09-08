@@ -36,4 +36,16 @@ public class SillyMethodsTest {
         String result = sillyMethods.countTo(0);
         Assertions.assertEquals(result, "0");
     }
+
+    @Test
+    public void testIs5Even() {
+        boolean result = sillyMethods.checkIfEven(5);
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    public void testIs26Even() {
+        boolean result = sillyMethods.checkIfEven(26);
+        Assertions.assertTrue(result);
+    }
 }
